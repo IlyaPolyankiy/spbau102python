@@ -23,7 +23,7 @@ class Fibs:
 
 
 fb = Fibs()
-n = int(input("Введите кол-во чисел фибоначчи: "))
+n = int(input("Введите кол-во чисел Фибоначчи: "))
 for i, f in zip(
     itertools.count(1),
     itertools.islice(fb, n)
