@@ -30,13 +30,13 @@ if __name__ == '__main__':
     print(f"\nYou have {cpus} threads")
     t1 = time.time()
     PI = MultPI(pool)
-    print("1) Result: ", PI)
-    print("Time spent with multiprocessing:", time.time() - t1)
+    print("1) Result (with multiprocessing): ", PI)
+    print("Time spent (with multiprocessing):", time.time() - t1)
 
     t2 = time.time()
     pi = CountPI(n*cpus)
-    print("2) Result multiprocessing:", pi)
-    print("Time spent without multiprocessing:", time.time() - t2)
+    print("2) Result (without multiprocessing):", pi)
+    print("Time spent (without multiprocessing):", time.time() - t2)
     print("\n")
 
 ''''
