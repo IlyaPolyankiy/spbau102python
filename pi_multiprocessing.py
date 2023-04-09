@@ -43,9 +43,9 @@ if __name__ == '__main__':
 Мой результат - почти в 6 раз быстрее при такой же точности вычисления:
 
 You have 12 threads
-1) Result:  3.141378933415426
-Time spent with multiprocessing: 1.857706069946289
-2) Result multiprocessing: 3.141552335813683
-Time spent without multiprocessing: 10.513164281845093
+1) Result (with multiprocessing):  3.141882000082107
+Time spent (with multiprocessing): 1.8021390438079834
+2) Result (without multiprocessing): 3.141651202480627
+Time spent (without multiprocessing): 10.342500448226929
 '''
 
