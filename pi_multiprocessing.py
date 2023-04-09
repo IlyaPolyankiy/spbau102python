@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     t2 = time.time()
     pi = CountPI(n*cpus)
-    print("2) Result using multiprocessing:", pi)
+    print("2) Result multiprocessing:", pi)
     print("Time spent without multiprocessing:", time.time() - t2)
     print("\n")
 
@@ -43,9 +43,9 @@ if __name__ == '__main__':
 Мой результат - почти в 6 раз быстрее при такой же точности вычисления:
 
 You have 12 threads
-1) Result:  3.1414280000820938
-Time spent with multiprocessing: 1.8396711349487305
-2) Result using multiprocessing: 3.141700869147433
-Time spent without multiprocessing: 10.68752121925354
+1) Result:  3.141378933415426
+Time spent with multiprocessing: 1.857706069946289
+2) Result multiprocessing: 3.141552335813683
+Time spent without multiprocessing: 10.513164281845093
 '''
 
