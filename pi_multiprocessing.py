@@ -2,22 +2,22 @@ import random
 import multiprocessing
 import time
 
-def countportion(n):
+def count_portion(n):
     x = random.random()  
     y = random.random()
     if 1>x*x+y*y:  
         return(4/n)
     return 0
 
-def CountPI(n):
+def count_pi(n):
     PI = 0
     for _ in range(n):
-        PI += countportion(n)
+        PI += count_portion(n)
     return PI
 
-def MultPI(pool):
+def multiprocess_pi(pool):
     pi = 0
-    for res in pool.map(CountPI, [n]*cpus):
+    for res in pool.map(count_pi, [n]*cpus):
         pi += res
     pi = pi / cpus
     return pi
@@ -29,12 +29,12 @@ if __name__ == '__main__':
     cpus = multiprocessing.cpu_count()
     print(f"\nYou have {cpus} threads")
     t1 = time.time()
-    PI = MultPI(pool)
+    PI = multiprocess_pi(pool)
     print("1) Result (with multiprocessing): ", PI)
     print("Time spent (with multiprocessing):", time.time() - t1)
 
     t2 = time.time()
-    pi = CountPI(n*cpus)
+    pi = count_pi(n*cpus)
     print("2) Result (without multiprocessing):", pi)
     print("Time spent (without multiprocessing):", time.time() - t2)
     print("\n")
