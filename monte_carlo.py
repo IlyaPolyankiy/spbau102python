@@ -1,6 +1,6 @@
 import random
 
-def CountPI(n):
+def count_pi(n):
     count = 0
     incircle = 0
     while count < n:
@@ -14,4 +14,4 @@ def CountPI(n):
     PI = 4 * incircle / count  # Мы рассматривали только первую четверть круга
     return PI
 
-print(CountPI(100000))
+print(count_pi(100000))
