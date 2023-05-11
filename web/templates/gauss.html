@@ -1,0 +1,29 @@
+﻿<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Решение систем линейных уравнений</title>
+  </head>
+  <body>
+    <p><b>Введите пожалуйста коэффициэнты всех уравнений системы.</b></p>
+	<p>Например, для системы уравнений:</p>
+	<p><i>
+		2x + 5y + z = 8<br>
+		-x + 1.5y + 2z = 0<br>
+		0.5x - 8y - 5z = 7 
+	</i></p>
+	<p>Введите:</p>
+	<p><i>
+		2 5 1<br>
+		-1 1.5 2<br>
+		0.5 -8 -5<br>
+		8 0 7</p>
+	</i>
+	<form method="GET">
+		<textarea name="data" rows = 10 cols = 50></textarea>
+		<input type="submit">
+	</form>
+	<p>
+		Ответ: {{answer}}
+	</p>
+  </body>
+</html>
